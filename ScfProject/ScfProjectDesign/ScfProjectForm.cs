@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrivialBehind;
 
 namespace ScfProjectDesign
 {
@@ -15,6 +16,16 @@ namespace ScfProjectDesign
         public ScfProjectForm()
         {
             InitializeComponent();
+            // boilerplate starts
+            var disposer = TrivialBehinds.CreateBehind(this, new ScfProjectUi
+            {
+                button1 = button1,
+                label1 = label1
+            });
+            this.FormClosed += (o,e) => 
+                disposer.Dispose();
+            // boilerplate ends
+
         }
     }
 }
