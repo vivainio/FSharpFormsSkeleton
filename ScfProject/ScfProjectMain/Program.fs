@@ -1,7 +1,12 @@
-﻿// Learn more about F# at http://fsharp.org
-// See the 'F# Tutorial' project for more help.
+﻿open System
+open System.Windows.Forms
+open ScfProjectDesign
 
-[<EntryPoint>]
-let main argv = 
+[<EntryPoint; STAThread>]
+let main argv =
+    Application.EnableVisualStyles()
+    Application.SetCompatibleTextRenderingDefault(false)
+    use form = new ScfProjectForm()
+    Application.Run(form)    
     printfn "%A" argv
     0 // return an integer exit code
