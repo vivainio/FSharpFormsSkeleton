@@ -8,5 +8,4 @@ let main argv =
     Application.SetCompatibleTextRenderingDefault(false)
     use form = new ScfProjectForm()
     Application.Run(form)    
-    printfn "%A" argv
     0 // return an integer exit code
