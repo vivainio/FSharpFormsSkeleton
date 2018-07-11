@@ -1,6 +1,6 @@
 ﻿namespace ScfProjectDesign
 {
-    partial class UserControl1
+    partial class ScfProjectForm
     {
         /// <summary>
         /// Required designer variable.

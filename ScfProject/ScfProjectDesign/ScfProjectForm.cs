@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ScfProjectDesign
 {
-    public partial class UserControl1: UserControl
+    public partial class ScfProjectForm: Form
     {
-        public UserControl1()
+        public ScfProjectForm()
         {
             InitializeComponent();
         }
